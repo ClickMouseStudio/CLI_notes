@@ -1,5 +1,5 @@
 # CLI_notes
-A cross-platform CLI toolkit: dotfiles, tips, and setup scripts for ClickMouseStudio
+A cross-platform CLI toolkit: dotfiles and tips for ClickMouseStudio
 
 🖱️ **マウスだけでやってきたあなたへ。**  
 このリポジトリは、**“黒い画面（ターミナル）”と仲良くなる**ための小さな手引きです。
