@@ -1,0 +1,43 @@
+# OS関連
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+Pipfile.lock
+poetry.lock
+
+# Shell history or temp files
+.zsh_history
+.bash_history
+*.swp
+*.swo
+*~
+
+# VSCode
+.vscode/
+.code-workspace
+
+# Logs & cache
+*.log
+.cache/
+logs/
+tmp/
+
+# Node (万一使う場合)
+node_modules/
+npm-debug.log
+
+# Mac Terminal settings
+.Terminal/
+
+# Windows PowerShell settings
+PSReadLineConsoleHost_history.txt
+
+# Git settings
+*.orig
