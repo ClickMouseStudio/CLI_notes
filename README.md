@@ -3,7 +3,8 @@
 A cross-platform CLI toolkit: dotfiles and tips for ClickMouseStudio
 
 ---
-
+![ターミナルのビフォーアフター](src/img/figfig1.png)
+---
 このリポジトリは、Linux / macOS / Windows（＋WSL）環境における
 CLI 作業のための共通設定（dotfiles）や運用メモ（tips）を整理・共有することを目的としています。
 
