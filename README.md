@@ -1,12 +1,23 @@
-# CLI_notes
+# CLI\_notes
+
 A cross-platform CLI toolkit: dotfiles and tips for ClickMouseStudio
 
-🖱️ **マウスだけでやってきたあなたへ。**  
-このリポジトリは、**“黒い画面（ターミナル）”と仲良くなる**ための小さな手引きです。
+---
 
-最初の1行を打つところから、Pythonの実行環境を整えるところまで。  
-Linux、macOS、Windows（WSL含む）それぞれに合わせて、  
-**設定ファイル（dotfiles）とコマンドのヒント（tips）**を、やさしくまとめています。
+このリポジトリは、Linux / macOS / Windows（＋WSL）環境における
+CLI 作業のための共通設定（dotfiles）や運用メモ（tips）を整理・共有することを目的としています。
 
-> 黒い画面とお友達になれたら、きっと作業がちょっと楽になります。  
-> 「ちょっと試してみようかな」──その気持ちを、応援します。
+ターミナルの操作に慣れていない方でも、使いやすい環境を整えられるように構成しています。
+
+---
+
+## 📁 ディレクトリ構成
+
+* [common/](./common/) — OSに依存しない共通設定やNeoVimの構成
+* [linux/](./linux/) — Linux 環境専用の dotfiles や tips
+* [mac/](./mac/) — macOS（Apple Silicon）環境向け設定とツール構成
+* [windows/](./windows/) — Windows / WSL 環境用の構成と補足情報
+
+---
+
+ターミナルの黒い画面と、無理なく友達になれるような環境づくりを目指しています。
