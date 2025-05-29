@@ -14,9 +14,9 @@ CLI 作業のための共通設定（dotfiles）や運用メモ（tips）を整�
 ## 📁 ディレクトリ構成
 
 * [common/](./common/) — OSに依存しない共通設定やNeoVimの構成
-* [linux/](./linux/) — Linux 環境専用の dotfiles や tips
-* [mac/](./mac/) — macOS（Apple Silicon）環境向け設定とツール構成
-* [windows/](./windows/) — Windows / WSL 環境用の構成と補足情報
+* [Ubuntu/](./Ubuntu/) — Ubuntu(Linux) 環境専用の dotfiles や tips
+* [macOS/](./macOS/) — macOS（Apple Silicon）環境向け設定とツール構成
+* [Windows/](./Windows/) — Windows / WSL 環境用の構成と補足情報
 
 ---
 
