@@ -11,6 +11,7 @@
 ```
 common/
 ├── NeoVim/           # NeoVimの共通設定とカスタマイズ（LazyVimベース）
+├── commands.md       # OSに依存しにくい共通コマンド集
 └── README.md         # このファイル
 ```
 
@@ -23,6 +24,12 @@ common/
 * NeoVim（LazyVimベース）の共通設定例
 * カラースキームやプラグインの追加方法
 * 実際に使用している `lazy.lua` 設定例
+
+### [commands.md](./commands.md)
+
+* 日常運用で使う基本コマンド
+* Git / 検索 / エディタの最小セット
+* 破壊的操作を避けるための安全メモ
 
 ---
 
