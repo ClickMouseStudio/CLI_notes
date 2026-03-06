@@ -38,7 +38,6 @@ git --version
 nvim --version
 gh --version
 fzf --version
-conda --version
 ```
 
 ## 6. 次の手順
