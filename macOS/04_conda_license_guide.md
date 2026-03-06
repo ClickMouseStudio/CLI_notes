@@ -6,6 +6,7 @@
 ## 先に結論
 - `Miniforge + conda-forge` を使う運用なら、Anaconda の有料条件を避けやすいです。
 - `defaults` チャンネルを混ぜると、Anaconda 側の利用条件の対象になる可能性があります。
+- クリーンな Miniforge では、通常 `defaults` は最初から入っていません。
 
 ## このリポジトリの方針
 - Miniforge を使う
@@ -16,6 +17,7 @@
 ## 使う前に確認すること
 ```bash
 conda config --show channels
+conda config --show-sources
 ```
 
 理想は、`channels` に次が入っている状態です。
@@ -23,6 +25,12 @@ conda config --show channels
 - `apple`
 
 `defaults` が入っていたら外します。
+
+```bash
+conda config --remove channels defaults
+```
+
+`defaults` が出る主な原因は、過去の `.condarc` 設定の引き継ぎです。
 
 ## よくある質問
 ### Q. 大学研究なら Anaconda は必ず有料？

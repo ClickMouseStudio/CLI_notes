@@ -21,21 +21,28 @@ source ~/.zshrc
 ```
 
 ## 3. チャンネル設定（Apple を追加 / conda-forge を優先）
+クリーンな Miniforge では、最初から `conda-forge` が既定です。  
+この手順では、`apple` を追加しつつ `conda-forge` を先頭にそろえます。
+
 ```bash
 conda config --add channels apple
 conda config --add channels conda-forge
 conda config --prepend channels conda-forge
 conda config --set channel_priority strict
-conda config --remove channels defaults
 ```
-`defaults` が未登録の場合、最後の行でエラー表示が出てもそのまま次へ進んで大丈夫です。
 
 確認:
 ```bash
 conda config --show channels
+conda config --show-sources
 ```
 
 詳しい背景は [04_conda_license_guide.md](./04_conda_license_guide.md) を参照してください。
+
+`channels` に `defaults` が出た場合だけ実行:
+```bash
+conda config --remove channels defaults
+```
 
 ## 4. テスト環境を作成
 ```bash
