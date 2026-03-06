@@ -1,30 +1,38 @@
 # macOS 事前インストールガイド (Apple Silicon)
 
-`.zshrc` を適用する前に、以下のパッケージを先に導入します。
+このページでは、`.zshrc` を使う前に必要なアプリを入れます。  
+「まず何をすればいいか」が分かるように、順番に書いています。
 
-## 方針
-- CLI ツールは Homebrew で管理
-- Zsh プラグインは Zinit で管理
-- Conda は Miniforge (Homebrew Cask) を使用
+## 1. Homebrew をインストール（未導入の人だけ）
+Homebrew は、アプリをコマンドで入れるための道具です。
 
-## 1. Homebrew の更新
+ターミナルで次を実行:
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+入ったか確認:
+```bash
+brew --version
+```
+
+## 2. Homebrew を最新にする
 ```bash
 brew update
 ```
 
-## 2. Formulae をインストール
+## 3. 基本ツールをインストール
 ```bash
 brew install lsd fzf bat gh ghq curl gcc git neovim peco tree wget
 ```
 
-## 3. Casks をインストール
-フォント Cask のために `homebrew/cask-fonts` を先に追加します。
+## 4. 追加アプリをインストール（iTerm2 / フォント / Miniforge）
 ```bash
 brew tap homebrew/cask-fonts
 brew install --cask iterm2 font-fira-code font-fira-code-nerd-font font-hackgen font-hackgen-nerd miniforge
 ```
 
-## 4. 導入確認
+## 5. インストールできたか確認
 ```bash
 git --version
 nvim --version
@@ -33,7 +41,7 @@ fzf --version
 conda --version
 ```
 
-## 5. 次の手順
-事前インストールが完了したら、以下へ進んでください。
-- Zsh 設定: [zshrc_setup.md](./zshrc_setup.md)
-- Python/Conda: [python_env_miniforge.md](./python_env_miniforge.md)
+## 6. 次の手順
+ここまで終わったら、次へ進みます。
+- Zsh の設定: [zshrc_setup.md](./zshrc_setup.md)
+- Python の設定: [python_env_miniforge.md](./python_env_miniforge.md)
