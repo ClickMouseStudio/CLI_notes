@@ -3,14 +3,7 @@
 このページでは、Conda が使えるかを確認します。  
 最後にテスト用の環境を作って、Python の `Hello World` を実行します。
 
-## 1. conda を有効化
-最初の1回だけ実行:
-```bash
-conda init zsh
-source ~/.zshrc
-```
-
-## 2. conda が使えるか確認
+## 1. conda が使えるか確認
 ```bash
 conda --version
 ```
@@ -18,6 +11,13 @@ conda --version
 `conda: command not found` の場合:
 ```bash
 eval "$(/opt/homebrew/Caskroom/miniforge/base/bin/conda shell.zsh hook)"
+```
+
+## 2. conda を有効化
+最初の1回だけ実行:
+```bash
+conda init zsh
+source ~/.zshrc
 ```
 
 ## 3. テスト環境を作成
