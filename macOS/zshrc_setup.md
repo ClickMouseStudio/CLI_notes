@@ -33,3 +33,6 @@ rg --version
 ## よくある問題
 - プラグインが読み込まれない: `~/.zinit` の存在確認後に `source ~/.zshrc`
 - 補完が遅い: プラグイン数を減らし、重い補完を後回しにする
+
+## 次の手順
+Conda の確認は [python_env_miniforge.md](./python_env_miniforge.md) を実行してください。
