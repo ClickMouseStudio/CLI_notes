@@ -6,10 +6,20 @@ Apple Silicon 向けの最小 Zsh セットアップ手順です。
 - macOS (Apple Silicon)
 - Homebrew 導入済み
 
-## 1. 基本ツール導入
+## 0. 事前インストール
+先に [macOS_install_list.md](./macOS_install_list.md) の手順で必要ツールを入れてください。
+最小実行コマンド:
 ```bash
 brew update
-brew install zsh git fzf ripgrep
+brew install lsd fzf bat gh ghq curl gcc git neovim peco tree wget
+brew tap homebrew/cask-fonts
+brew install --cask iterm2 font-fira-code font-fira-code-nerd-font font-hackgen font-hackgen-nerd miniforge
+```
+
+## 1. 追加ツール導入（任意）
+`macOS_install_list.md` で入れていない場合のみ実行:
+```bash
+brew install zsh ripgrep
 ```
 
 ## 2. Zinit の導入
