@@ -4,7 +4,7 @@ Apple Silicon 向けの最小 Zsh セットアップ手順です。
 
 ## 前提
 - macOS (Apple Silicon)
-- [macOS_install_list.md](./macOS_install_list.md) を完了していること
+- [01_macOS_install_list.md](./01_macOS_install_list.md) を完了していること
 
 ## 1. Zinit の導入
 ```bash
@@ -35,4 +35,4 @@ rg --version
 - 補完が遅い: プラグイン数を減らし、重い補完を後回しにする
 
 ## 次の手順
-Conda の確認は [python_env_miniforge.md](./python_env_miniforge.md) を実行してください。
+Conda の確認は [03_python_env_miniforge.md](./03_python_env_miniforge.md) を実行してください。

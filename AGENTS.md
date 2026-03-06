@@ -24,7 +24,7 @@ If you use external linters locally (for example `markdownlint`), run them befor
 - Use Markdown headings in descending order (`#`, `##`, `###`) with short sections.
 - Prefer concise, task-oriented sentences; avoid long prose blocks.
 - Use fenced code blocks with language tags (for example ```bash, ```lua).
-- File names for setup guides use snake_case (example: `python_env_miniforge.md`).
+- File names for setup guides use snake_case with optional step prefix (example: `03_python_env_miniforge.md`).
 - Preserve existing directory naming (`Ubuntu`, `Windows`, `macOS`, `common`).
 
 ## Testing Guidelines

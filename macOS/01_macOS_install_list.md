@@ -49,5 +49,5 @@ rg --version
 
 ## 6. 次の手順
 ここまで終わったら、次へ進みます。
-- Zsh の設定: [zshrc_setup.md](./zshrc_setup.md)
-- Python の設定: [python_env_miniforge.md](./python_env_miniforge.md)
+- Zsh の設定: [02_zshrc_setup.md](./02_zshrc_setup.md)
+- Python の設定: [03_python_env_miniforge.md](./03_python_env_miniforge.md)
