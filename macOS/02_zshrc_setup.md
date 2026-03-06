@@ -14,7 +14,21 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma-continuum/zinit/
 ## 2. `.zshrc` を反映
 このリポジトリのサンプルをベースにする場合:
 ```bash
+# いまの設定をバックアップ（すでにあれば上書き）
+cp ~/.zshrc ~/.zshrc.backup
+
+# このリポジトリの .zshrc をホームディレクトリにコピー
 cp ./macOS/.zshrc ~/.zshrc
+
+# 反映
+source ~/.zshrc
+```
+`cp` は「ファイルをコピーする」コマンドです。  
+この手順では、`./macOS/.zshrc` を `~/.zshrc` にコピーして、ターミナル設定として使います。
+
+バックアップに戻したい場合:
+```bash
+cp ~/.zshrc.backup ~/.zshrc
 source ~/.zshrc
 ```
 
