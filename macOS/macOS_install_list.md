@@ -16,6 +16,12 @@ Homebrew は、アプリをコマンドで入れるための道具です。
 brew --version
 ```
 
+`brew: command not found` と出た場合は、次を1回だけ実行してください。
+```bash
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 ## 2. Homebrew を最新にする
 ```bash
 brew update
@@ -23,7 +29,7 @@ brew update
 
 ## 3. 基本ツールをインストール
 ```bash
-brew install lsd fzf bat gh ghq curl gcc git neovim peco tree wget
+brew install lsd fzf bat gh ghq curl gcc git neovim peco tree wget ripgrep
 ```
 
 ## 4. 追加アプリをインストール（iTerm2 / フォント / Miniforge）
@@ -38,6 +44,7 @@ git --version
 nvim --version
 gh --version
 fzf --version
+rg --version
 ```
 
 ## 6. 次の手順

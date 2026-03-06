@@ -2,7 +2,13 @@
 
 Miniforge を使って軽量に Python 環境を管理する手順です。
 
-## 1. Miniforge インストール
+## 1. Miniforge の確認（未導入ならインストール）
+まず確認:
+```bash
+conda --version
+```
+
+見つからない場合のみインストール:
 ```bash
 brew install --cask miniforge
 ```
